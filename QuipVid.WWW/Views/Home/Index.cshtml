@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Quip>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 1em;">
+        @if (Model.Any())
+        {
+            foreach (var quip in Model)
+            {
+                <div class="card" style="width: 18rem;">
+                    <video controls="controls" style="width: 100%; object-fit: cover;" height="133" src="@quip.Video" poster="@quip.Image"></video>
+                    <div class="card-body">
+                        <h5 class="card-title">@quip.Name</h5>
+                        <p class="card-text">@quip.Title</p>
+                    </div>
+                </div>
+            }   
+        }
+    </div>
+</div>

@@ -1,0 +1,13 @@
+{
+  "ConnectionStrings": {
+    "PostgreSQL": "Host=localhost;Database=quipvid_local;Username=postgres;Password=password"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}
